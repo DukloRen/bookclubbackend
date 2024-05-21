@@ -1,0 +1,23 @@
+GET http://localhost:3000/api/members
+
+###
+
+POST http://localhost:3000/api/members
+Content-Type: application/json
+
+{
+  "name" : "Jancsi",
+  "gender" : "M",
+  "birth_date" : "2022-02-13T01:55:22.000Z"
+}
+
+###
+
+POST http://localhost:3000/api/members/1/pay
+Content-Type: application/json
+
+{
+  "member_id" : 1,
+  "amount" : 5000,
+  "paid_at" : "2022-02-13T01:55:22.000Z"
+}
